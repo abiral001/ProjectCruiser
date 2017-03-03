@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ProjectCruiser" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ProjectCruiser" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ProjectCruiser" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="beginScreen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="beginScreen.h" />
+		<Unit filename="creditsScreen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="creditsScreen.h" />
+		<Unit filename="customizeScreen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="customizeScreen.h" />
+		<Unit filename="gameScreen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gameScreen.h" />
+		<Unit filename="homeScreen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="homeScreen.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.h" />
+		<Unit filename="overScreen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="overScreen.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
