@@ -2,11 +2,13 @@
 #include "beginScreen.h"
 #include "homeScreen.h"
 
-int main( int argc, char* args[] )
+int main(int argc, char* args[] )
 {
+    FILE *file;
     SDL_Window *m_window;
     SDL_Renderer *m_renderer;
     SDL_Event event;
+
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
         printf("\nError initializing SDL\n");
         return 0;
@@ -28,7 +30,7 @@ int main( int argc, char* args[] )
         printf("\nError creating renderer\n");
         return 0;
     }
-    initiate(m_window, m_renderer, event);
+    initiate(file, m_renderer, event, m_window);
 
     IMG_Quit();
     TTF_Quit();
@@ -36,13 +38,13 @@ int main( int argc, char* args[] )
     return 0;
 }
 
-void initiate(SDL_Window *m_window, SDL_Renderer *m_renderer, SDL_Event event) {
+void initiate(FILE*file, SDL_Renderer *m_renderer, SDL_Event event, SDL_Window *m_window) {
     int check;
-    check = beginSplash(m_window, m_renderer, event);
+    check = beginSplash(file, m_renderer, event);
     if (check == 1) {
         return;
     }
-    homeSplash(m_window, m_renderer, event);
+    homeSplash(file, m_renderer, event);
     destroyEverything(m_window, m_renderer);
 }
 

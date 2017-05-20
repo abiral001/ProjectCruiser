@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1488422502 source:c:\users\abira\documents\codeblocks\projectcruiser\main.c
+1490255185 source:c:\users\abira\documents\codeblocks\projectcruiser\main.c
 	"main.h"
 	"beginScreen.h"
 	"homeScreen.h"
 
-1488457013 c:\users\abira\documents\codeblocks\projectcruiser\main.h
+1488810917 c:\users\abira\documents\codeblocks\projectcruiser\main.h
 	<stdio.h>
+	<string.h>
 	"SDL2/SDL.h"
 	"SDL2/SDL_ttf.h"
 	"SDL2/SDL_image.h"
@@ -19,19 +20,19 @@
 
 1488018383 c:\users\abira\documents\codeblocks\projectcruiser\aboutscreen.h
 
-1488296957 source:c:\users\abira\documents\codeblocks\projectcruiser\creditsscreen.c
+1490091741 source:c:\users\abira\documents\codeblocks\projectcruiser\creditsscreen.c
 	"main.h"
 	"creditsScreen.h"
 
-1488123129 c:\users\abira\documents\codeblocks\projectcruiser\creditsscreen.h
+1488716108 c:\users\abira\documents\codeblocks\projectcruiser\creditsscreen.h
 
-1488018663 source:c:\users\abira\documents\codeblocks\projectcruiser\customizescreen.c
+1490091692 source:c:\users\abira\documents\codeblocks\projectcruiser\customizescreen.c
 	"main.h"
 	"customizeScreen.h"
 
-1488018536 c:\users\abira\documents\codeblocks\projectcruiser\customizescreen.h
+1488716147 c:\users\abira\documents\codeblocks\projectcruiser\customizescreen.h
 
-1488456092 source:c:\users\abira\documents\codeblocks\projectcruiser\homescreen.c
+1490254758 source:c:\users\abira\documents\codeblocks\projectcruiser\homescreen.c
 	"main.h"
 	"homeScreen.h"
 	"gameScreen.h"
@@ -39,23 +40,78 @@
 	"customizeScreen.h"
 	"overScreen.h"
 
-1488290201 c:\users\abira\documents\codeblocks\projectcruiser\homescreen.h
+1488716278 c:\users\abira\documents\codeblocks\projectcruiser\homescreen.h
 
-1488467311 source:c:\users\abira\documents\codeblocks\projectcruiser\overscreen.c
+1490091528 source:c:\users\abira\documents\codeblocks\projectcruiser\overscreen.c
 	"main.h"
 	"overScreen.h"
 
-1488110465 c:\users\abira\documents\codeblocks\projectcruiser\overscreen.h
+1489654353 c:\users\abira\documents\codeblocks\projectcruiser\overscreen.h
 
-1488292590 source:c:\users\abira\documents\codeblocks\projectcruiser\beginscreen.c
+1490254173 source:c:\users\abira\documents\codeblocks\projectcruiser\beginscreen.c
 	"main.h"
 	"beginScreen.h"
 
-1488109027 c:\users\abira\documents\codeblocks\projectcruiser\beginscreen.h
+1488716044 c:\users\abira\documents\codeblocks\projectcruiser\beginscreen.h
 
-1488475533 source:c:\users\abira\documents\codeblocks\projectcruiser\gamescreen.c
+1490091645 source:c:\users\abira\documents\codeblocks\projectcruiser\gamescreen.c
 	"main.h"
 	"gameScreen.h"
 
-1488471156 c:\users\abira\documents\codeblocks\projectcruiser\gamescreen.h
+1489631087 c:\users\abira\documents\codeblocks\projectcruiser\gamescreen.h
+
+1490091741 source:c:\users\abira\desktop\project c 2073\source codes\projectcruiser\creditsscreen.c
+	"main.h"
+	"creditsScreen.h"
+
+1488810917 c:\users\abira\desktop\project c 2073\source codes\projectcruiser\main.h
+	<stdio.h>
+	<string.h>
+	"SDL2/SDL.h"
+	"SDL2/SDL_ttf.h"
+	"SDL2/SDL_image.h"
+	<conio.h>
+	<stdlib.h>
+	<time.h>
+
+1488716108 c:\users\abira\desktop\project c 2073\source codes\projectcruiser\creditsscreen.h
+
+1490091692 source:c:\users\abira\desktop\project c 2073\source codes\projectcruiser\customizescreen.c
+	"main.h"
+	"customizeScreen.h"
+
+1488716147 c:\users\abira\desktop\project c 2073\source codes\projectcruiser\customizescreen.h
+
+1490257216 source:c:\users\abira\desktop\project c 2073\source codes\projectcruiser\gamescreen.c
+	"main.h"
+	"gameScreen.h"
+
+1489631087 c:\users\abira\desktop\project c 2073\source codes\projectcruiser\gamescreen.h
+
+1490254758 source:c:\users\abira\desktop\project c 2073\source codes\projectcruiser\homescreen.c
+	"main.h"
+	"homeScreen.h"
+	"gameScreen.h"
+	"creditsScreen.h"
+	"customizeScreen.h"
+	"overScreen.h"
+
+1488716278 c:\users\abira\desktop\project c 2073\source codes\projectcruiser\homescreen.h
+
+1489654353 c:\users\abira\desktop\project c 2073\source codes\projectcruiser\overscreen.h
+
+1490258240 source:c:\users\abira\desktop\project c 2073\source codes\projectcruiser\main.c
+	"main.h"
+	"beginScreen.h"
+	"homeScreen.h"
+
+1488716044 c:\users\abira\desktop\project c 2073\source codes\projectcruiser\beginscreen.h
+
+1490091528 source:c:\users\abira\desktop\project c 2073\source codes\projectcruiser\overscreen.c
+	"main.h"
+	"overScreen.h"
+
+1490499828 source:c:\users\abira\desktop\project c 2073\source codes\projectcruiser\beginscreen.c
+	"main.h"
+	"beginScreen.h"
 

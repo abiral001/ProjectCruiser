@@ -5,7 +5,7 @@
 #include "customizeScreen.h"
 #include "overScreen.h"
 
-int homeSplash(SDL_Window *m_window, SDL_Renderer *m_renderer, SDL_Event event) {
+int homeSplash(FILE *file, SDL_Renderer *m_renderer, SDL_Event event) {
     SDL_Rect rect, crop, nameRect, nameCrop, tRect, cRect, cuRect, eRect, boxRect, boxCrop;
     SDL_Color text_color = {0, 255, 255, 0};
     SDL_Color title_color = {0, 0, 100, 0};
@@ -35,6 +35,7 @@ int homeSplash(SDL_Window *m_window, SDL_Renderer *m_renderer, SDL_Event event) 
         IMG_Quit();
         return 0;
     }
+
     tRect.x = cRect.x = cuRect.x = eRect.x = 15;
     tRect.y = 300;
     cuRect.y = 350;
@@ -57,25 +58,25 @@ int homeSplash(SDL_Window *m_window, SDL_Renderer *m_renderer, SDL_Event event) 
     boxCrop.w = 800;
     boxCrop.h = 600;
 
-    SDL_QueryTexture(playText, NULL, NULL, &tRect.w, &tRect.h);
-    SDL_QueryTexture(customizeText, NULL, NULL, &cuRect.w, &cuRect.h);
-    SDL_QueryTexture(creditsText, NULL, NULL, &cRect.w, &cRect.h);
-    SDL_QueryTexture(exitText, NULL, NULL, &eRect.w, &eRect.h);
-    SDL_QueryTexture(image, NULL, NULL, &crop.w, &crop.h);
-    SDL_QueryTexture(titleImage, NULL, NULL, &nameRect.w, &nameRect.h);
+    SDL_QueryTexture(playText, 0, 0, &tRect.w, &tRect.h);
+    SDL_QueryTexture(customizeText, 0, 0, &cuRect.w, &cuRect.h);
+    SDL_QueryTexture(creditsText, 0, 0, &cRect.w, &cRect.h);
+    SDL_QueryTexture(exitText, 0, 0, &eRect.w, &eRect.h);
+    SDL_QueryTexture(image, 0, 0, &crop.w, &crop.h);
+    SDL_QueryTexture(titleImage, 0, 0, &nameRect.w, &nameRect.h);
 
     SDL_RenderClear(m_renderer);
     SDL_RenderCopy(m_renderer, image, &crop, &rect);
-    SDL_RenderCopy(m_renderer, titleImage, NULL, &nameRect);
-    SDL_RenderCopy(m_renderer, playText, NULL, &tRect);
-    SDL_RenderCopy(m_renderer, customizeText, NULL, &cuRect);
-    SDL_RenderCopy(m_renderer, creditsText, NULL, &cRect);
-    SDL_RenderCopy(m_renderer, exitText, NULL, &eRect);
+    SDL_RenderCopy(m_renderer, titleImage, 0, &nameRect);
+    SDL_RenderCopy(m_renderer, playText, 0, &tRect);
+    SDL_RenderCopy(m_renderer, customizeText, 0, &cuRect);
+    SDL_RenderCopy(m_renderer, creditsText, 0, &cRect);
+    SDL_RenderCopy(m_renderer, exitText, 0, &eRect);
     SDL_RenderCopy(m_renderer, box, &boxCrop, &boxRect);
     SDL_RenderPresent(m_renderer);
 
     while(!quit){
-            srand(time(0));
+        srand(time(0));
         while (SDL_PollEvent(&event)) {
             if (event.type == SDL_QUIT){
                     quit = 1;
@@ -89,11 +90,11 @@ int homeSplash(SDL_Window *m_window, SDL_Renderer *m_renderer, SDL_Event event) 
                             boxRect.y += 50;
                             SDL_RenderClear(m_renderer);
                             SDL_RenderCopy(m_renderer, image, &crop, &rect);
-                            SDL_RenderCopy(m_renderer, titleImage, NULL, &nameRect);
-                            SDL_RenderCopy(m_renderer, playText, NULL, &tRect);
-                            SDL_RenderCopy(m_renderer, customizeText, NULL, &cuRect);
-                            SDL_RenderCopy(m_renderer, creditsText, NULL, &cRect);
-                            SDL_RenderCopy(m_renderer, exitText, NULL, &eRect);
+                            SDL_RenderCopy(m_renderer, titleImage, 0, &nameRect);
+                            SDL_RenderCopy(m_renderer, playText, 0, &tRect);
+                            SDL_RenderCopy(m_renderer, customizeText, 0, &cuRect);
+                            SDL_RenderCopy(m_renderer, creditsText, 0, &cRect);
+                            SDL_RenderCopy(m_renderer, exitText, 0, &eRect);
                             SDL_RenderCopy(m_renderer, box, &boxCrop, &boxRect);
                             SDL_RenderPresent(m_renderer);
                         }
@@ -104,11 +105,11 @@ int homeSplash(SDL_Window *m_window, SDL_Renderer *m_renderer, SDL_Event event) 
                             boxRect.y -= 50;
                             SDL_RenderClear(m_renderer);
                             SDL_RenderCopy(m_renderer, image, &crop, &rect);
-                            SDL_RenderCopy(m_renderer, titleImage, NULL, &nameRect);
-                            SDL_RenderCopy(m_renderer, playText, NULL, &tRect);
-                            SDL_RenderCopy(m_renderer, customizeText, NULL, &cuRect);
-                            SDL_RenderCopy(m_renderer, creditsText, NULL, &cRect);
-                            SDL_RenderCopy(m_renderer, exitText, NULL, &eRect);
+                            SDL_RenderCopy(m_renderer, titleImage, 0, &nameRect);
+                            SDL_RenderCopy(m_renderer, playText, 0, &tRect);
+                            SDL_RenderCopy(m_renderer, customizeText, 0, &cuRect);
+                            SDL_RenderCopy(m_renderer, creditsText, 0, &cRect);
+                            SDL_RenderCopy(m_renderer, exitText, 0, &eRect);
                             SDL_RenderCopy(m_renderer, box, &boxCrop, &boxRect);
                             SDL_RenderPresent(m_renderer);
                         }
@@ -116,12 +117,13 @@ int homeSplash(SDL_Window *m_window, SDL_Renderer *m_renderer, SDL_Event event) 
                     case SDLK_RETURN:
                         switch(menu) {
                         case 0:
-                            quit = gameSplash(m_window, m_renderer, event);
+                            quit = gameSplash(file, m_renderer, event);
                             break;
                         case 1:
+                            quit = customizeSplash(file, m_renderer, event);
                             break;
                         case 2:
-                            quit = creditsSplash(m_window, m_renderer, event);
+                            quit = creditsSplash(file, m_renderer, event);
                             break;
                         case 3:
                             quit = 1;

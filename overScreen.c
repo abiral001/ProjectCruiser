@@ -1,7 +1,7 @@
 #include "main.h"
 #include "overScreen.h"
 
-int overSplash(SDL_Window *m_window, SDL_Renderer *m_renderer, SDL_Event event) {
+int overSplash(FILE *file, SDL_Renderer *m_renderer, SDL_Event event, long int scoreN) {
     int quit = 0;
     TTF_Font *font = TTF_OpenFont("sources/Fonts/DESTROY_.TTF", 70);
     TTF_Font *elsem = TTF_OpenFont("sources/Fonts/segoeui.ttf", 24);
@@ -12,7 +12,7 @@ int overSplash(SDL_Window *m_window, SDL_Renderer *m_renderer, SDL_Event event) 
 
     surface = TTF_RenderText_Solid(font, "GAME OVER", color);
     gameOver = SDL_CreateTextureFromSurface(m_renderer, surface);
-    surface = TTF_RenderText_Solid(elsem, "Score : 000000", color);
+    surface = TTF_RenderText_Solid(elsem, "Score = ", color);
     score = SDL_CreateTextureFromSurface(m_renderer, surface);
     surface = TTF_RenderText_Solid(elsem, "Press Enter to go to main Menu", color);
     enter = SDL_CreateTextureFromSurface(m_renderer, surface);
@@ -24,17 +24,18 @@ int overSplash(SDL_Window *m_window, SDL_Renderer *m_renderer, SDL_Event event) 
     ente.x = 0;
     ente.y = 0;
     scor.x = 0;
-    scor.y = 490;
+    scor.y = 570;
 
-    SDL_QueryTexture(gameOver, NULL, NULL, &over.w, &over.h);
-    SDL_QueryTexture(score, NULL, NULL, &scor.w, &scor.h);
-    SDL_QueryTexture(enter, NULL, NULL, &ente.w, &ente.h);
+    SDL_QueryTexture(gameOver, 0, 0, &over.w, &over.h);
+    SDL_QueryTexture(score, 0, 0, &scor.w, &scor.h);
+    SDL_QueryTexture(enter, 0, 0, &ente.w, &ente.h);
 
     SDL_RenderClear(m_renderer);
-    SDL_RenderCopy(m_renderer, back, NULL, NULL);
-    SDL_RenderCopy(m_renderer, gameOver, NULL, &over);
-    SDL_RenderCopy(m_renderer, score, NULL, &scor);
-    SDL_RenderCopy(m_renderer, enter, NULL, &ente);
+    SDL_RenderCopy(m_renderer, back, 0, 0);
+    SDL_RenderCopy(m_renderer, gameOver, 0, &over);
+    SDL_RenderCopy(m_renderer, score, 0, &scor);
+    displayScore(m_renderer, scoreN, elsem);
+    SDL_RenderCopy(m_renderer, enter, 0, &ente);
     SDL_RenderPresent(m_renderer);
     while(!quit){
         while (SDL_PollEvent(&event)) {

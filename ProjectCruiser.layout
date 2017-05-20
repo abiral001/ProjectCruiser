@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
-	<ActiveTarget name="Debug" />
-	<File name="beginScreen.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="104" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="customizeScreen.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="54" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="homeScreen.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="100" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="customizeScreen.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="49" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="homeScreen.c" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="5662" topLine="110" />
-		</Cursor>
-	</File>
-	<File name="gameScreen.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="7037" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="gameScreen.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="100" topLine="0" />
-		</Cursor>
-	</File>
+	<ActiveTarget name="Release" />
 	<File name="beginScreen.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="207" topLine="22" />
+			<Cursor1 position="2394" topLine="21" />
+		</Cursor>
+	</File>
+	<File name="homeScreen.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="94" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="gameScreen.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="169" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="creditsScreen.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="creditsScreen.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="111" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="main.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1204" topLine="32" />
+			<Cursor1 position="75" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="main.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="191" topLine="0" />
+			<Cursor1 position="293" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="overScreen.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="overScreen.c" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1897" topLine="36" />
+			<Cursor1 position="1213" topLine="18" />
 		</Cursor>
 	</File>
-	<File name="overScreen.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="beginScreen.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="100" topLine="0" />
+			<Cursor1 position="125" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="creditsScreen.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="customizeScreen.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3052" topLine="41" />
+			<Cursor1 position="84" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="homeScreen.c" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1137" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="overScreen.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="104" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="customizeScreen.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5541" topLine="122" />
+		</Cursor>
+	</File>
+	<File name="gameScreen.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7969" topLine="225" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
